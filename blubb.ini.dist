@@ -1,0 +1,5 @@
+[blubb]
+hashid_salt = insert random seed here
+hashid_min_length = 5
+# set this if automatic url detection doesn't work properly
+# myurl = http://foobar/
