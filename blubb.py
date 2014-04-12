@@ -1,6 +1,13 @@
 #!./py/bin/python
-
 # vim: sw=4 ai sts=4 et :
+#
+# ----------------------------------------------------------------------------
+# "THE BEER-WARE LICENSE" (Revision 42):
+# <dt@rbfh.de> wrote this file. As long as you retain this notice you
+# can do whatever you want with this stuff. If we meet some day, and you think
+# this stuff is worth it, you can buy me a beer in return Danijel Tasov
+# ----------------------------------------------------------------------------
+#
 
 import bottle
 from bottle import template, response, request, HTTPError
@@ -70,9 +77,3 @@ def get_blubb(db):
     id = cur.lastrowid
     hashed = hashids.encrypt(id)
     return get_url() + hashed + "\n"
-
-#root_app = bottle.Bottle()
-#root_app.mount('/blubb', app)
-#root_app.run(server='cherrypy', host='0.0.0.0', port='7280')
-
-#app.run(host='0.0.0.0', port=8280)
