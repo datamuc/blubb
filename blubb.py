@@ -75,4 +75,4 @@ def get_blubb(db):
 #root_app.mount('/blubb', app)
 #root_app.run(server='cherrypy', host='0.0.0.0', port='7280')
 
-app.run(host='0.0.0.0', port=8280)
+#app.run(host='0.0.0.0', port=8280)
