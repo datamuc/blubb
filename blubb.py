@@ -61,7 +61,7 @@ def show_blubb(hashed, db):
         lexer,
         HtmlFormatter(
             full=True,
-            style='borland',
+            style='perldoc',
             lineanchors='n',
             linenos='inline',
             encoding='utf-8'
